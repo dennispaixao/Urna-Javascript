@@ -1,0 +1,82 @@
+ 
+ ------------------------------------flexbox--------------------
+ display:flex;//torna container flex
+ flex-direction:row-reverse;//dispõe itens em linha ao contrário//o padrão é row
+ flex-direction:column;//dispõe itens em forma de coluna
+ justify-content:flex-start, flex-end, space-between, space-around, space-evenly//disposição entre os itens   
+ align-items:flex-start, flex-end, center, stretch, align-items, baseline
+ flex-wrap:nowrap, wrap, wrap-reverse;//
+ flex-shrink:2;//encolhe e adapta o tamanho dos elementos
+ flex-grow:2;//aumenta e adapta o tamanho dos elementos
+ flex-basis:20em, 10%, 10px// tamanho do elemento no container
+ flex: 0 1 auto;//shorthand para shrink grow basis
+ order:1,2,3,4...//ordena a disposição de elementos
+ align-self:flex-start, flex-end, center, stretch, align-items, baseline//alinha o proprio elemento quebrando a disposição oferecida pelo container
+---------------------------------------------------------------------
+-----------------------------------css grid--------------------------
+ display:grid;
+ grid-template-columns: 50px 50px;
+ grid-template-rows: 50px 50px;
+ grid-column-gap: 20px;
+ grid-row-gap:5px;
+ grid-gap:10px 20px;
+ grid-column:2/4;//expande a coluna da segunda divisória até a quarta
+ grid-row: 2/4;expande a linha da segunda divisória até a quarta
+ justify-self:stretch(default),start,center,end;//disposição do item horisontalmente
+ align-self:stretch(default),start,center,end;//disposição do item verticalmente
+ justify-items:center;//aplicado a todos os itens do container
+ align-items:end;//aplicado a todos os itens do container
+ grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;
+ grid-area:3/1/4/4;
+ grid-template-areas:
+  "header header header"
+  "advert content . "
+  "footer footer footer"; //para disposição dos elementos . representa celula vazia
+.item1 {
+  grid-area: header;  //coloca o .item1 no header ele ocupara 3 espaços
+}
+grid-template-rows: repeat(100, 50px);//cria 100 linhas de 50px
+grid-template-columns: repeat(2, 1fr 50px) 20px;isso é equivalente a isso abaixo
+grid-template-columns: 1fr 50px 1fr 50px 20px;
+grid-template-columns: 100px minmax(50px, 200px);//define tamanho minimo e máximo ao redimensionar
+grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));//auto-fill
+grid-template-columns:  repeat(auto-fit, minmax(60px, 1fr));//auto-fit
+
+
+----------------------------------------------------------------------
+css{
+    font-weight: bold; //para deixar negrito
+    font-weight:800; //grossura da fonte de 1 a 999
+    text-decoration: line-through; // linha cortando o texto
+    opacity:0.7; //adiciona opacidade
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);//duas sombras
+    text-transform: lowercase/uppercase/capitalize/initial/inherit/none //muda formato das letras
+    line-height:45px;//espaçamento entre as linhas
+    :hover
+    background-color: hsl(180, 90%, 35%);
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    background: repeating-linear-gradient(45deg,yellow 0px,yellow 40px,black 40px,black 80px);
+    transform:scale(2)
+    transform:skewX(24deg);
+    transform: rotate(-45deg) ;
+    box-shadow: 25px 10px 0px 0px blue;
+        {#rect {
+            animation: rainbow 3s infinite;
+            animation-fill-mode: forwards;//mantem o ultimo estado da animação
+            animation-timing-function:   cubic-bezier(0, 0, 0.58, 1);
+        }
+        @keyframes rainbow{
+        0%{background-color:blue}
+        50%{background-color:green}
+        100%{background-color:yellow}
+        }
+
+}
+      
+}
+html{
+    <strong>texto </strong> // para deixar o texto em negrito
+    <u>texto</u>//sublinha texto
+    <em>text</em> italico
+    <s>text</s> //linha cortando o texto
+}

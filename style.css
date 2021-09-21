@@ -1,0 +1,96 @@
+body{
+    margin:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.urna{
+    background-color:#dbd5c9;
+    padding:30px;
+    display:flex;
+}
+.tela{
+    width:500px;
+    height:320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition:1s;
+
+}
+.teclado{
+    background-color:#403a3a;
+    margin-left:30px;
+}
+.teclado--linha{
+    display:flex;
+    justify-content: center;
+}
+.teclado--botão,.teclado--botão--controle{
+    width:80px;
+    height: 40px;
+    color:#fff;
+    font-size: 25px;
+    background-color: #333;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    cursor:pointer;
+    box-shadow: 3px 3px 0px #000;
+}
+.teclado--botão:active, .teclado--botão--controle:active{
+    box-shadow: 0px 0px 0px #000;
+}
+
+.botao--branco, .botao--corrige, .botao--confirma{
+    font-size:20px;
+    color:white;
+}
+.botao--branco{
+    color:#333;
+    background-color: white; 
+  
+}
+.botao--corrige{
+    background-color:rgb(255, 17, 0);
+}
+.botao--confirma{
+    background-color:green
+}
+
+.divtela1{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+}
+.numeros-tela{
+    width: 340px;
+    background:rgb(255, 151, 200);
+    display:flex;
+}
+.foto-tela{
+    width:160px;
+    height:200px;
+    overflow:hidden;
+
+}
+.foto-tela img{
+    width: 160px;
+    height:200px;
+}
+
+.numero--candidato{
+    font-family: verdana;
+    font-size:25px;
+    width:40px;
+    margin:3px;
+    height:60px;
+    background:#ccc;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
